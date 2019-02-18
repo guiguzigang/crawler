@@ -52,6 +52,7 @@ async function getAllUrls() {
       console.log(index, '   ==>   ', _url)
       list += `\n${_url}`
     } catch (e) {
+      list += `\n出错`
       console.error(`第${index}出错`, e)
     }
   }
